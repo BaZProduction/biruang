@@ -1,0 +1,37 @@
+
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+.clear {clear: both;}
+*{font-family: Roboto, sans-serif;}
+
+/*HEADER
+*=================================================*/
+.header {
+    height: 125px;
+    width: 1170px;
+    margin: 0 auto;
+}
+.header h1{float: left;}
+.header ul {    list-style: none;}
+.header ul li {
+    float: left;
+    margin-right: 35px;
+}
+.home-child {
+    display: none;
+}
+.contact {
+    float: right;
+}
+.contact p {float: left;
+    margin-right: 20px;
+}
+.header-line{
+    height: 1px;
+    color: #eee;
+    border: 0px;
+}
+/*
+*=================================================*/
