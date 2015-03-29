@@ -10,18 +10,20 @@
 	font-family: RobotoBold;
 	src: url(../font/Roboto-Bold.ttf);
 }
+@font-face{
+	font-family: RobotoItalic;
+	src: url(../font/Roboto-LightItalic.ttf);
+}
 .clear {clear: both;}
 * {
 	color: #67686d;
 	font-family: Roboto, sans-serif;
 }
-a {
-	text-decoration: none;
-}
+a {	text-decoration: none;}
+/*-----------------------------------------------------------------------*/
 /*HEADER
 *=================================================*/
 .header {
-	/*height: 125px;*/
 	max-width: 1170px;
 	min-width: 690px;
 	margin: 25px auto 53px;
@@ -42,12 +44,14 @@ a {
 	float: left;
 	margin-right: 35px;
 }
-.header ul li a:hover{ color: #f45a40}
-.header ul li a:active{ color: #f45a40}
+.header ul li a:hover{
+	color: #f45a40;
+	transition: 0.4s;
+}
+.header ul li a:active{ color: #f45a40;}
 
 .home-child {	display: none;}
 .home-child li {	width: 100%;}
-
 .home:hover .home-child {
 	position: absolute;
 	display: block;
@@ -55,6 +59,7 @@ a {
 	width: 170px;
 	padding: 25px;
 	border-top: 1px solid #7e7f84;
+	transition: 0.5s;
 }
 .head-right {	float: right;}
 .contact {
@@ -88,11 +93,8 @@ a {
 /*BASKET*/
 .basket {
 	border: 1px solid #eee;
-	padding: 7px 18px;
-	/*min-width: 300px;*/
+	padding: 7px 20px 7px 40px;
 	display: inline-block;
-	/*height: 30px;*/
-
 }
 .basket p {
 	float: left;
@@ -100,16 +102,25 @@ a {
 	font-family: RobotoBold, sans-serif;
 	margin: 0  20px 0 0;
 }
-.price-img {
-	margin-left: -147px;
-	margin-right: 132px;
+.price:before {
+	content: url("../img/basket-full.png");
+	position: absolute;
+	margin-left: -26px;
 }
+.check:after {
+	content: url("../img/check-btn.png");
+	position: absolute;
+	margin-left: 8px;
+}
+/*search*/
+.inpt-srch {	border: none;}
 /* slider
 *=================================================*/
 .slider {
 	width: 100%;
 	height: 36em;
 	background: #7e7f84;
+	margin-bottom: 65px;
 }
 
 /* body
@@ -119,21 +130,154 @@ a {
 	min-width: 690px;
 	margin: 0 auto;
 }
-/*Block1*/
-.block1-child {
+
+/*Category*/
+.category {	width: 1170px;}
+.category .category-child {
+	float: left;
+	width: 370px;
+	margin-right: 30px;
+}
+.category .category-child img{
+	width: 370px;
+	height: 225px;
+	margin-bottom: 25px;
+}
+.category .category-child h2 {
+	text-transform: uppercase;
+	color: #f45a40;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+.category .category-child h2:hover {
+	border-bottom: 2px groove rgba(255, 88, 55, 0.7);
+	transition: 0.4s;
+}
+/*Category*/
+/*Popular product*/
+
+/*Porular*/
+.popular {
+	/*display: inline-block;*/
+	margin: 60px auto 40px;
+	width: 539px;
+	/*width: 100%;*/
+}
+.popular hr {
+	width: 155px;
+	border: none;
+	background: #eee;
+	height: 1px;
+	margin-top: 10px;
+}
+.popular p {
+	padding: 0 40px;
+	text-transform: uppercase;
+}
+.popular-product .popular hr, p {	float: left;}
+/*Product*/
+.product {
+	width: 268px;
+	margin-left: 30px;
+	margin-top: 40px;
+	float: left;
+	border: 1px solid #eeeeee;
+}
+.wrap-product {
+	padding: 20px;
+}
+.product h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 0px;
+}
+.product h3 {
+	font-family: RobotoItalic, sans-serif;
+	color: #67686d;
+	font-size: 14px;
+}
+.product p {font-size: 10px;}
+.product .wrap-product .wrap-price {
+	padding: 13px 0;
+	margin-top: 13px;
+	border-top: 1px solid #eee;
+}
+.product .wrap-product .wrap-price-right {float: right;}
+.product-price {
+	color: #f45a40;
+	float: left;
+}
+/*END Popular product*/
+/*free psd*/
+.red {color: #f45a40;}
+.free-psd .subscribes-body {  height: 19px;}
+.free-psd .subscribes-body ul{padding: 0;}
+.free-psd .subscribes-body ul li{
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	width: 19px;
+	height: 19px;
+	background: url("../img/subscribe_black_sprite.png") no-repeat;
 
 }
 
+.subscribes-body .fb{	background-position: 2px 0;}
+.subscribes-body .tw{	background-position: -34px 0;}
+.subscribes-body .go{	background-position: -71px 0;}
+.subscribes-body .vi{	background-position: -107px 0;}
+.subscribes-body .rs{	background-position: -146px 0;}
+.subscribes-body .fb:hover{	background-position:   2px  -21px;}
+.subscribes-body .go:hover{	background-position:  -71px -21px;}
+.subscribes-body .tw:hover{	background-position:  -34px -21px;}
+.subscribes-body .vi:hover{	background-position: -107px -21px;}
+.subscribes-body .rs:hover{	background-position: -146px -21px;}
+
+/*free psd*/
 
 /* footer
 *=================================================*/
+/*Body sign up*/
+.body-sign-up {
+	height: 69px;
+	background: #f45a40;
+	text-transform: uppercase;
+	padding-top: 40px;
+	/*position: absolute;*/
+	/*width: 100%;*/
+	/*margin-top: -109px;*/
+	/*margin-left: -13.15%;*/
+}
+.body-sign-up .body-sign-up-wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+.footer .body-sign-up p {height: 100%;
+	vertical-align: middle;}
+.footer .body-sign-up p, strong {
+	color: #fff;
+	font-size: 23px;
+	font-family: RobotoCondensed, sans-serif;
+}
+.body-sign-up form {
+	float: right;
+	margin-top: -7px;
+}
+.body-sign-up form input{
+	padding: 13px 20px;
+	border: none;
+}
+/*Body sign up*/
+
 .footer-width {
 	width: 1170px;
 	margin: 0 auto;
 }
 .footer {
 	background-color: #2a2d34;
-	height: 500px;
+	height: 464px;
 	font-size: 14px;
 }
 .footer h2, h3 {
@@ -146,13 +290,16 @@ a {
 
 .our-stories, .posts, .support, .contact-form {
 	float: left;
-	width: 25%;
+	/*width: 25%;*/
 	max-width: 270px;
 	min-width: 270px;
 	margin-right: 30px;
 }
 
-.our-stories p {	margin-bottom: 30px;}
+.our-stories p {
+	margin-bottom: 30px;
+	width: 100%;
+}
 .our-stories .subscribes {  height: 19px;}
 .our-stories .subscribes ul{padding: 0;}
 .our-stories .subscribes ul li{
@@ -187,3 +334,28 @@ a {
 }
 
 .contact-form {margin-right: 0;}
+.contact-form .inpt-mail, .inpt-text {
+	width: 270px;
+	border: none;
+	padding: 12px 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+/*BUTTON*/
+.button {
+	background: #f45a40;
+	border: none;
+	color: #fff;
+	font-size: 12px;
+}
+.button2 {
+	background: #ff674f;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.contact-btn {	padding: 13px 20px;}
+/*---------------------------------------------------------------*/
+.category .last {margin-right: 0;}
+ .first {margin-left: 0;}
