@@ -356,6 +356,23 @@ a {	text-decoration: none;}
 	transform: rotate(45deg);
 	transition: 0.4s;
 }*/
+#popular-slider .owl-controls .owl-buttons .owl-prev {
+	position: absolute;
+	margin: -284px 0 0 -607px;
+	width: 42px;
+	height: 42px;
+	background: url("../img/circle-left.png")no-repeat;
+	opacity: 0.99;
+}
+#popular-slider .owl-controls .owl-buttons .owl-next {
+	position: absolute;
+	margin: -284px 0 0 543px;
+	width: 42px;
+	height: 42px;
+	background: url("../img/circle-left.png")no-repeat;
+	transform: rotate(180deg);
+	opacity: 0.99;
+}
 .product-price {
 	color: #f45a40;
 	float: left;
