@@ -2,67 +2,68 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<title>BIRUANG</title>
-
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-
 	<link rel="stylesheet" href="css/owl.theme.css">
-	<!--<link rel="stylesheet" href="css/owl.transitions.css">-->
 	<link rel="stylesheet" href="css/owl.carousel.css">
 </head>
-<body>
-<!--HEADER-->
+<body onload="initialize()">
+<!--BEGIN HEADER-->
 	<div class="header">
 		<a href="index.html"><h1>BIRUANG</h1></a>
-
 		<div class="head-right">
 			<div class="contact">
 				<p class="phone">+371 282 20 760</p>
-
 				<p class="email">eony321v@gmail.com</p>
 			</div>
-
-			<!--basket-->
+			<!--begin basket-->
 			<div class="basket">
 				<p class="price">$ 99.54</p>
 				<p class="check">CHECKOUT</p>
-
+				<!--begin if-hover-->
 				<div class="if-hover">
-
 					<!--begin goods-->
-					<div class="goods">
-						<img src="img/pixel.png" alt="img"/>
-						<p>Good</p>
-						<p>2</p>
-						<p class="last-ch">20.54</p>
-					</div>
+					<a href="#">
+						<div class="goods">
+							<img src="img/pixel.png" alt="img"/>
+							<p>Good</p>
+							<p>2</p>
+							<p class="last-ch">20.54</p>
+						</div>
+					</a>
 					<!--end goods-->
 					<!--begin goods-->
-					<div class="goods">
-						<img src="img/pixel.png" alt="img"/>
-						<p>Good</p>
-						<p>2</p>
-						<p class="last-ch">59</p>
-					</div>
+					<a href="#">
+						<div class="goods">
+							<img src="img/pixel.png" alt="img"/>
+							<p>Good</p>
+							<p>2</p>
+							<p class="last-ch">20.54</p>
+						</div>
+					</a>
 					<!--end goods-->
 					<!--begin goods-->
-					<div class="goods">
-						<img src="img/pixel.png" alt="img"/>
-						<p>Good</p>
-						<p>2</p>
-						<p class="last-ch">20</p>
-					</div>
+					<a href="#">
+						<div class="goods">
+							<img src="img/pixel.png" alt="img"/>
+							<p>Good</p>
+							<p>2</p>
+							<p class="last-ch">20.54</p>
+						</div>
+					</a>
 					<!--end goods-->
-
 					<div class="clear"></div>
 					<hr/>
 					<div class="total">
+						<input id="checkout-btn" type="submit" value="CHECKOUT"/>
 						<span>Total: </span>99.54
 					</div>
 				</div>
+				<!--end if-hover-->
 			</div>
-			<!--basket-->
+			<!--end basket-->
 
 		</div>
 		<div class="clear"></div>
@@ -93,13 +94,10 @@
 			</ul>
 		</div>
 	</div>
-<!--HEADER-->
-
-	<div class="clear"></div>
-
-<!--SLIDER-->
+<!--END HEADER-->
+<div class="clear"></div>
+<!--BEGIN SLIDER-->
 	<div id="slider" class="owl-carousel owl-theme">
-
 		<!--begin item-->
 		<div class="item">
 			<img src="img/slider/fullimage1.jpg" alt=""/>
@@ -111,7 +109,6 @@
 			</div>
 		</div>
 		<!--end item-->
-
 		<!--begin item-->
 		<div class="item">
 			<img src="img/slider/fullimage2.jpg" alt=""/>
@@ -123,7 +120,6 @@
 			</div>
 		</div>
 		<!--end item-->
-
 		<!--begin item-->
 		<div class="item">
 			<img src="img/slider/fullimage3.jpg" alt=""/>
@@ -135,7 +131,6 @@
 			</div>
 		</div>
 		<!--end item-->
-
 		<!--begin item-->
 		<div class="item">
 			<img src="img/slider/fullimage4.jpg" alt=""/>
@@ -148,30 +143,28 @@
 		</div>
 		<!--end item-->
 	</div>
-<!--SLIDER-->
-
-	<div class="clear"></div>
-
-<!--BODY-->
+<!--END SLIDER-->
+<div class="clear"></div>
+<!--BEGIN BODY-->
 	<div class="body">
 
 		<div class="category">
 			<div class="category-child">
-				<img src="img/pixel.png" alt="image">
+				<img src="http://lorempixel.com/370/225" alt="image">
 				<div class="text">
 					<a href="#"><h2>footboal shoes</h2></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ipsa.</p>
 				</div>
 			</div>
 			<div class="category-child">
-				<img src="img/pixel.png" alt="image">
+				<img src="http://lorempixel.com/370/225" alt="image">
 				<div class="text">
 					<a href="#"><h2>modern clothes</h2></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, obcaecati.</p>
 				</div>
 			</div>
 			<div class="category-child">
-				<img src="img/pixel.png" alt="image">
+				<img src="http://lorempixel.com/370/225" alt="image">
 				<div class="text">
 					<a href="#"><h2>bags & accesories</h2></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, velit.</p>
@@ -180,7 +173,7 @@
 		</div>
 
 		<div class="clear"></div>
-<!--popular product-->
+<!--begin popular product-->
 		<div id="popular" class="popular-product">
 			<div class="popular">
 				<hr class="popular-hr"/>
@@ -190,161 +183,134 @@
 			<br/>
 			<!--begin slider-->
 			<div id="popular-slider">
-
-				<!--product-->
+				<!--begin product-->
 				<div class="item">
-					<!--begin inside slider-->
-					<div id="sync1" class="owl-carousel">
-						<div class="item">
-							<img  src="img/slider/fullimage1.jpg" alt="image">
-						</div>
-						<div class="item">
-							<img  src="img/slider/fullimage2.jpg" alt="image">
-						</div>
-						<div class="item">
-							<img  src="img/slider/fullimage3.jpg" alt="image">
-						</div>
-					</div>
-					<div id="sync2" class="owl-carousel">
-						<div class="item">
-							<img src="img/slider/fullimage1.jpg" alt="image">
-						</div>
-						<div class="item">
-							<img src="img/slider/fullimage2.jpg" alt="image">
-						</div>
-						<div class="item">
-							<img src="img/slider/fullimage3.jpg" alt="image">
-						</div>
-					</div>
-					<div class="rates">
-
-					</div>
-					<!--end inside slider-->
+					<img  src="http://lorempixel.com/270/270" alt="image">
 					<div class="wrap-product">
 						<h2>nike taiwind loose</h2>
 						<h3>running tank top</h3>
 						<p>The Nike Tailwind Loose Women's Running Tank
 							Top is made with sweat-wicking fabric to help you
 							stay dry and comfortable on your run.</p>
-
 						<div class="clear"></div>
 						<div class="wrap-price">
 							<div class="product-price">$ 35.99</div>
 							<div class="wrap-price-right">
-								<img class="like" src="img/like.png" alt="like">
-								<img class="plus" src="img/plus.png" alt="plus">
+								<a href="#"><img class="like" src="img/like.png" alt="like"></a>
+								<a href="#"><img class="plus" src="img/plus.png" alt="plus"></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!--product-->
-				<!--product-->
+				<!--end product-->
+				<!--begin product-->
 				<div class="item">
-					<img class="prod-img" src="img/pixel.png" alt="image">
-					<div class="rates">
-
-					</div>
+					<img  src="http://lorempixel.com/270/270" alt="image">
 					<div class="wrap-product">
 						<h2>nike taiwind loose</h2>
 						<h3>running tank top</h3>
 						<p>The Nike Tailwind Loose Women's Running Tank
 							Top is made with sweat-wicking fabric to help you
 							stay dry and comfortable on your run.</p>
-
 						<div class="clear"></div>
 						<div class="wrap-price">
 							<div class="product-price">$ 35.99</div>
 							<div class="wrap-price-right">
-								<img class="like" src="img/like.png" alt="like">
-								<img class="plus" src="img/plus.png" alt="plus">
+								<a href="#"><img class="like" src="img/like.png" alt="like"></a>
+								<a href="#"><img class="plus" src="img/plus.png" alt="plus"></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!--product-->
-				<!--product-->
+				<!--end product-->
+				<!--begin product-->
 				<div class="item">
-					<img class="prod-img" src="img/pixel.png" alt="image">
-					<div class="rates">
-
-					</div>
+					<img  src="http://lorempixel.com/270/270" alt="image">
 					<div class="wrap-product">
 						<h2>nike taiwind loose</h2>
 						<h3>running tank top</h3>
 						<p>The Nike Tailwind Loose Women's Running Tank
 							Top is made with sweat-wicking fabric to help you
 							stay dry and comfortable on your run.</p>
-
 						<div class="clear"></div>
 						<div class="wrap-price">
 							<div class="product-price">$ 35.99</div>
 							<div class="wrap-price-right">
-								<img class="like" src="img/like.png" alt="like">
-								<img class="plus" src="img/plus.png" alt="plus">
+								<a href="#"><img class="like" src="img/like.png" alt="like"></a>
+								<a href="#"><img class="plus" src="img/plus.png" alt="plus"></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!--product-->
-				<!--product-->
+				<!--end product-->
+				<!--begin product-->
 				<div class="item">
-					<img class="prod-img" src="img/pixel.png" alt="image">
-					<div class="rates">
-
-					</div>
+					<img  src="http://lorempixel.com/270/270" alt="image">
 					<div class="wrap-product">
 						<h2>nike taiwind loose</h2>
 						<h3>running tank top</h3>
 						<p>The Nike Tailwind Loose Women's Running Tank
 							Top is made with sweat-wicking fabric to help you
 							stay dry and comfortable on your run.</p>
-
 						<div class="clear"></div>
 						<div class="wrap-price">
 							<div class="product-price">$ 35.99</div>
 							<div class="wrap-price-right">
-								<img class="like" src="img/like.png" alt="like">
-								<img class="plus" src="img/plus.png" alt="plus">
+								<a href="#"><img class="like" src="img/like.png" alt="like"></a>
+								<a href="#"><img class="plus" src="img/plus.png" alt="plus"></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!--product-->
-				<!--product-->
+				<!--end product-->
+				<!--begin product-->
 				<div class="item">
-					<img class="prod-img" src="img/pixel.png" alt="image">
-					<div class="rates">
-
-					</div>
+					<img  src="http://lorempixel.com/270/270" alt="image">
 					<div class="wrap-product">
 						<h2>nike taiwind loose</h2>
 						<h3>running tank top</h3>
 						<p>The Nike Tailwind Loose Women's Running Tank
 							Top is made with sweat-wicking fabric to help you
 							stay dry and comfortable on your run.</p>
-
 						<div class="clear"></div>
 						<div class="wrap-price">
 							<div class="product-price">$ 35.99</div>
 							<div class="wrap-price-right">
-								<img class="like" src="img/like.png" alt="like">
-								<img class="plus" src="img/plus.png" alt="plus">
+								<a href="#"><img class="like" src="img/like.png" alt="like"></a>
+								<a href="#"><img class="plus" src="img/plus.png" alt="plus"></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!--product-->
-
+				<!--end product-->
+				<!--begin product-->
+				<div class="item">
+					<img  src="http://lorempixel.com/270/270" alt="image">
+					<div class="wrap-product">
+						<h2>nike taiwind loose</h2>
+						<h3>running tank top</h3>
+						<p>The Nike Tailwind Loose Women's Running Tank
+							Top is made with sweat-wicking fabric to help you
+							stay dry and comfortable on your run.</p>
+						<div class="clear"></div>
+						<div class="wrap-price">
+							<div class="product-price">$ 35.99</div>
+							<div class="wrap-price-right">
+								<a href="#"><img class="like" src="img/like.png" alt="like"></a>
+								<a href="#"><img class="plus" src="img/plus.png" alt="plus"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end product-->
 			</div>
 			<!--end slider-->
 		</div>
-		<!--popular product-->
-
+		<!--end popular product-->
 		<div class="clear"></div>
-
+		<!--begin free-psd-->
 		<div class="free-psd">
 			<h2><span class="red">Biruang</span> Free PSD</h2>
-
 			<div class="wrap-text1">
 				<div class="text1">
 					<p>NEQUE PORRO <br/>
@@ -354,21 +320,11 @@
 				</div>
 				<div class="subscribes-body">
 					<ul>
-						<a href="#">
-							<li class="fb"></li>
-						</a>
-						<a href="#">
-							<li class="tw"></li>
-						</a>
-						<a href="#">
-							<li class="go"></li>
-						</a>
-						<a href="#">
-							<li class="vi"></li>
-						</a>
-						<a href="#">
-							<li class="rs"></li>
-						</a>
+						<a href="#"><li class="fb"></li></a>
+						<a href="#"><li class="tw"></li></a>
+						<a href="#"><li class="go"></li></a>
+						<a href="#"><li class="vi"></li></a>
+						<a href="#"><li class="rs"></li></a>
 					</ul>
 				</div>
 			</div>
@@ -377,131 +333,142 @@
 <p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante tempor accumsan. Aenean aliquam justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
 <p>Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque non cursus mi, eu cursus nunc. Nullam et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla urna. This template was created by Erik Padamans.</p>
 			</div>
-			<div class="map">
+
+			<div id="map_canvas" class="map"></div>
+
+			<!--<div class="map">
 				<div class="show-map">
 					<div class="zoom">
 						<input class="plus" type="submit" value="+"/> <br/>
 						<input class="minus" type="submit" value="-"/>
 					</div>
-					<div class="marker">
-						<img src="img/marker.png" alt="map-marker">
-					</div>
+					<div class="marker"><img src="img/marker.png" alt="map-marker"></div>
 				</div>
 				<div class="controls">
 					<input class="adress" type="text" placeholder="Stacijas laukums 2, Riga"/>
 					<input class="icon-marker" type="submit" value=""/>
-					<!--<div><img src="img/icon_marker.png" alt="img-marker"></div>-->
 				</div>
-			</div>
+			</div>-->
 		</div>
-
+		<!--end free-psd-->
 	</div>
 <!--BODY-->
-
-	<div class="clear"></div>
-
-<!--   FOOTER   -->
-	<div class="footer">
-		<div class="body-sign-up">
-			<div class="body-sign-up-wrapper">
-				<p><strong>Sign up</strong> for exclusive sales and product news</p>
-				<form action="#" method="post">
-					<input type="text" placeholder="EONY321V@GMAIL.COM">
-					<input class="button2" type="submit" name="sing-up" value="SIGN UP">
-				</form>
-			</div>
-		</div>
-
-		<div class="footer-width">
-			<div class="our-stories">
-				<h2>our stories</h2>
-				<p>Feel free to visit our stores or contact us. <br/>
-					1401 South Grand Avenue <br/>
-					Los Angeles, CA 90015 <br/>
-					(213) 748-2411</p>
-				<p>100 Fairview Drive <br/>
-					Franklin, VA 23851 <br/>
-					(757) 569-6100 </p>
-
-				<div class="subscribes">
-					<ul>
-						<a href="#" ><li class="fb"></li></a>
-						<a href="#" ><li class="tw"></li></a>
-						<a href="#" ><li class="go"></li></a>
-						<a href="#" ><li class="vi"></li></a>
-						<a href="#" ><li class="rs"></li></a>
-					</ul>
-				</div>
-			</div>
-
-			<div class="posts">
-				<h2>Blog posts</h2>
-
-				<div class="article">
-					<h3>Justin Bieber confirmed that he is gay.</h3>
-
-					<p>Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Donec sed auctor elit.</p>
-				</div>
-				<div class="article">
-					<h3>New sexy sport clothes are here!</h3>
-
-					<p>Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Donec sed auctor elit.</p>
-				</div>
-				<div class="article">
-					<h3>Summer sales are coming!</h3>
-
-					<p>Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Donec sed auctor elit. </p>
-				</div>
-			</div>
-
-			<div class="support">
-				<h2>support</h2>
-
-				<div class="support-column-left">
-					<a href="#">Terms & Conditions</a><br/>
-					<a href="#">FAQ</a><br/>
-					<a href="#">Payment</a><br/>
-					<a href="#">Refunds</a><br/>
-					<a href="#">Track Order</a><br/>
-					<a href="#">Services</a><br/>
-					<a href="#">Privacy & Security</a><br/>
-					<a href="#">Careers</a><br/>
-					<a href="#">Press</a><br/>
-					<a href="#">Corporate Information</a><br/>
-				</div>
-				<div class="support-column-right">
-					<a href="#">Sizing</a><br/>
-					<a href="#">Ordering</a><br/>
-					<a href="#">Shipping</a><br/>
-					<a href="#">Return Policy</a><br/>
-					<a href="#">Affiliates</a><br/>
-					<a href="#">Find A Store </a><br/>
-					<a href="#">Site Map</a><br/>
-					<a href="#">Sign Up & Save</a><br/>
-				</div>
-			</div>
-
-			<div class="contact-form">
-				<h2>contact us</h2>
-
-				<form action="#" method="post">
-					<input class="inpt-mail" type="email" name="e-mail" placeholder="YOUR E-MAIL..." required>
-					<textarea class="inpt-text" name="text" id="" cols="10" rows="3" placeholder="YOUR TEXT..." required></textarea>
-					<input class="button contact-btn" name="enter" type="submit" value="SEND MESSAGE">
-				</form>
-			</div>
+<div class="clear"></div>
+<!--BEGIN FOOTER-->
+<div class="footer">
+	<div class="body-sign-up">
+		<div class="body-sign-up-wrapper">
+			<p><strong>Sign up</strong> for exclusive sales and product news</p>
+			<form action="#" method="post">
+				<input type="text" placeholder="EONY321V@GMAIL.COM">
+				<input class="button2" type="submit" name="sing-up" value="SIGN UP">
+			</form>
 		</div>
 	</div>
-<!--   FOOTER   -->
+	<div class="footer-width">
+
+		<div class="our-stories">
+			<h2>our stories</h2>
+			<p>Feel free to visit our stores or contact us. <br/>
+				1401 South Grand Avenue <br/>
+				Los Angeles, CA 90015 <br/>
+				(213) 748-2411</p>
+			<p>100 Fairview Drive <br/>
+				Franklin, VA 23851 <br/>
+				(757) 569-6100 </p>
+			<div class="subscribes">
+				<ul>
+					<a href="#" ><li class="fb"></li></a>
+					<a href="#" ><li class="tw"></li></a>
+					<a href="#" ><li class="go"></li></a>
+					<a href="#" ><li class="vi"></li></a>
+					<a href="#" ><li class="rs"></li></a>
+				</ul>
+			</div>
+		</div>
+
+		<div class="posts">
+			<h2>Blog posts</h2>
+			<!--begin article-->
+			<div class="article">
+				<a href="#"><h3>Justin Bieber confirmed that he is gay.</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Donec sed auctor elit.</p>
+			</div>
+			<!--end article-->
+			<!--begin article-->
+			<div class="article">
+				<a href="#"><h3>New sexy sport clothes are here!</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Donec sed auctor elit.</p>
+			</div>
+			<!--end article-->
+			<!--begin article-->
+			<div class="article">
+				<a href="#"><h3>Summer sales are coming!</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Donec sed auctor elit. </p>
+			</div>
+			<!--end article-->
+		</div>
+
+		<div class="support">
+			<h2>support</h2>
+			<div class="support-column-left">
+				<a href="#">Terms & Conditions</a><br/>
+				<a href="#">FAQ</a><br/>
+				<a href="#">Payment</a><br/>
+				<a href="#">Refunds</a><br/>
+				<a href="#">Track Order</a><br/>
+				<a href="#">Services</a><br/>
+				<a href="#">Privacy & Security</a><br/>
+				<a href="#">Careers</a><br/>
+				<a href="#">Press</a><br/>
+				<a href="#">Corporate Information</a><br/>
+			</div>
+			<div class="support-column-right">
+				<a href="#">Sizing</a><br/>
+				<a href="#">Ordering</a><br/>
+				<a href="#">Shipping</a><br/>
+				<a href="#">Return Policy</a><br/>
+				<a href="#">Affiliates</a><br/>
+				<a href="#">Find A Store </a><br/>
+				<a href="#">Site Map</a><br/>
+				<a href="#">Sign Up & Save</a><br/>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<h2>contact us</h2>
+			<form action="#" method="post">
+				<input class="inpt-mail" type="email" name="e-mail" placeholder="YOUR E-MAIL..." required>
+				<textarea class="inpt-text" name="text" id="" cols="10" rows="3" placeholder="YOUR TEXT..." required></textarea>
+				<input class="button contact-btn" name="enter" type="submit" value="SEND MESSAGE">
+			</form>
+		</div>
+	</div>
+</div>
+<!--END FOOTER-->
 	<div class="clear"></div>
-
 	<script src="js/jquery-1.9.1.min.js"></script>
-
 	<script src="js/owl.carousel.min.js"></script>
-	<!--<script src="js/owl.carousel.js"></script>-->
 	<script src="js/slider.js"></script>
+
+<!--Google API-->
+<script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDQVzlMbkhUkPz_8x4pPExiS6jvG36Iwe0&sensor=true">
+</script>
+<script type="text/javascript">
+	function initialize() {
+		var mapOptions = {
+			center: new google.maps.LatLng(-34.397, 150.644),
+			zoom: 8,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"),
+				mapOptions);
+	}
+
+</script>
 </body>
 </html>
